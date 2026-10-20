@@ -1,30 +1,72 @@
 # Privacy Policy — Blend Loop
 
-**Effective date:** 2026-10-19
+**Effective date:** 2026-10-20
 **Developer:** AmoryDev
 **Contact:** amory.dev@gmail.com
 
 ## Summary
-Blend Loop is a single-player puzzle game. The current version does not collect, store on our servers, or share any personal data.
+Blend Loop is a puzzle game with online leaderboards and a weekly race. To run them, the game creates an anonymous account for your device; it never asks for your email, phone number, contacts or precise location, and it does not use advertising identifiers. Google (Firebase) runs our servers and our analytics. Where the law requires it (the EEA, the UK and Switzerland), analytics only runs with your consent. You can delete your online data in the game at any time: Settings → Privacy → Delete my online data.
 
-## Information we collect
-- **None.** The game does not ask for your name, email, location or contacts. It does not use advertising identifiers.
-- Your game progress (levels completed, settings) is stored **on your device**. If Android device backup is turned on, the system may include it in your device backup (handled by Google, not by us) so it can be restored after reinstalling. Without a backup, uninstalling the game deletes it.
+## What we collect and why
 
-## Third-party services
-The current version includes Google Firebase libraries, prepared for online leaderboards in a future version. In this version they are not used, and their Google Analytics collection is turned off, so no data is sent to Google through them. The game does not include advertising or payment services. When a future version turns these features on or adds new services, this policy will be updated before release to describe what data they process and how you can control it.
+### Anonymous account (every install, from the first launch)
+- **What:** a random account id created by Firebase Authentication. Google receives your device's IP address and the app's user agent when the account is created and each time the game checks in.
+- **Why:** to keep your leaderboard profile and race entries yours, and to check the time with Google's servers so that timers (lives, daily rewards) cannot be skipped by changing the device clock.
+- **Legal basis:** providing the game's online features to you.
+- **Kept:** until you delete it in the game.
+
+### Leaderboard profile (only once you choose a name)
+- **What:** the nickname you choose, your avatar, your country (from your device's region setting, not from GPS) and the highest level you reached.
+- **Who sees it:** other players, on the Country and World leaderboards.
+- **Why and legal basis:** showing you and others on the leaderboards, which you ask for by choosing a name.
+- **Kept:** until you delete it in the game.
+
+### Weekly race
+- **What:** your score for the week and your race group of five. Your nickname, avatar and score are shown to the four other players in your group.
+- **Kept:** deleted automatically 30 days after the week ends, or earlier when you delete your online data.
+
+### Analytics (Google Analytics for Firebase)
+- **What:** game events (levels started, won or lost, boosters used, tutorial steps, your consent answer), device and app information (model, OS version, app version, language), an app instance id, your anonymous account id (so that one support code finds all your data when you ask us to delete it), and an approximate location (country or region) that Google derives from your IP address. No advertising id; Google's advertising features are off; no names or free text are sent.
+- **When:** in the EEA, the UK and Switzerland only after you agree in the consent form (change your choice any time: Settings → Privacy → Open options). Elsewhere analytics runs from the first launch.
+- **Why and legal basis:** understanding which levels are too hard or too easy, to improve the game (your consent where it is required; otherwise our legitimate interest in improving the game).
+- **Kept:** for the retention period set in Google Analytics (14 months). A copy of the events goes to our Google BigQuery project, where each daily table is deleted after 14 months.
+
+### Crash reports (Firebase Crashlytics)
+- **What:** when the game crashes: the crash trace, the app's state at the time, device information (model, OS version, free memory), a crash installation id, and the level being played.
+- **When:** from the first launch.
+- **Why and legal basis:** finding and fixing crashes (our legitimate interest in a working game).
+- **Kept:** 90 days by Google.
+
+### Game settings (Firebase Remote Config)
+- **What:** each launch the game downloads our current settings (reward amounts, belt timing). Google receives a Firebase installation id, your country, language and time zone, the OS and app versions.
+- **Why and legal basis:** delivering the game's settings (providing the game).
+
+### App integrity (Firebase App Check)
+- **What:** a token from Google Play Integrity that shows requests come from our unmodified app.
+- **Why and legal basis:** protecting our servers and the leaderboards from abuse (our legitimate interest).
+
+### Stored only on your device
+- Your progress (levels, coins, lives, album, settings) and your consent choice. If Android device backup is on, Google may include them in your backup. Uninstalling the game removes them from the device, but not your online data: delete that first in the game.
+
+## Who processes your data
+Google is our service provider for all of the above (Firebase, Google Analytics, Google Cloud, Google Play). Our game data (leaderboard profiles, race entries) is stored in Google Cloud's Singapore region; Google may process data in other countries under its own safeguards. We do not sell your data, do not share it with anyone for advertising, and do not show ads in this version.
+
+## Deleting your data
+- **In the game:** Settings → Privacy → **Delete my online data**. This deletes your leaderboard profile, your race entries and your anonymous account at once, and resets this install's Firebase and analytics ids. Within 30 days we ask Google to delete your analytics data (Google removes it from reports within 72 hours and deletes it within about two months) and we delete it from BigQuery. Crash reports expire after 90 days. Your progress on the device stays.
+- **By email:** if you cannot use the game, email amory.dev@gmail.com from any address with the **support code** shown in Settings → Privacy (tap it to copy the full code). We delete the same data within 30 days, as above. We cannot find your data by your nickname alone, because nicknames are not unique.
+- More: https://amorydev.github.io/blendloop-legal/delete-data
+
+## Your rights
+Depending on where you live, you can ask to access, correct or delete your data, object to its use or withdraw your consent (Settings → Privacy → Open options, where offered). Withdrawing consent does not affect what was done before. You can also complain to your data protection authority.
 
 ## Children
-The game's content is suitable for all ages. It is not directed to children, and we do not knowingly collect personal information from anyone.
+The game's content is suitable for all ages, but it is not directed to children; our target audience is adults. We do not knowingly collect personal information from children.
 
 ## Security
-Because no personal data leaves your device, there is no personal data held by us to secure or disclose.
-
-## Your choices
-You can delete all locally stored game data at any time by clearing the game's app data in your device settings, or by uninstalling it (and removing it from your device backup if backup is on).
+All data travels encrypted (HTTPS). The game cannot read or write our database directly; only our server functions can, each acting for the signed-in player only.
 
 ## Changes to this policy
-We will post any changes on this page and update the effective date above.
+We will post changes on this page and update the effective date above.
 
 ## Contact
-Questions about this policy: amory.dev@gmail.com.
+Questions about this policy or your data: amory.dev@gmail.com.
