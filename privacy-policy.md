@@ -1,11 +1,11 @@
 # Privacy Policy — Blend Loop
 
-**Effective date:** 2026-10-20
+**Effective date:** 2026-10-21
 **Developer:** AmoryDev
 **Contact:** amory.dev@gmail.com
 
 ## Summary
-Blend Loop is a puzzle game with online leaderboards and a weekly race. To run them, the game creates an anonymous account for your device; it never asks for your email, phone number, contacts or precise location, and it does not use advertising identifiers. Google (Firebase) runs our servers and our analytics. Where the law requires it (the EEA, the UK and Switzerland), analytics only runs with your consent. You can delete your online data in the game at any time: Settings → Privacy → Delete my online data.
+Blend Loop is a puzzle game with online leaderboards and a weekly race. To run them, the game creates an anonymous account for your device; it never asks for your email, phone number, contacts or precise location, and it does not use advertising identifiers. Google (Firebase) runs our servers and our analytics. Where the law requires it (the EEA, the UK and Switzerland), analytics only runs with your consent. If you buy something in the game, Google Play takes the payment; we keep a record of the purchase to deliver it, restore it and handle refunds. You can delete your online data in the game at any time: Settings → Privacy → Delete my online data.
 
 ## What we collect and why
 
@@ -24,6 +24,12 @@ Blend Loop is a puzzle game with online leaderboards and a weekly race. To run t
 ### Weekly race
 - **What:** your score for the week and your race group of five. Your nickname, avatar and score are shown to the four other players in your group.
 - **Kept:** deleted automatically 30 days after the week ends, or earlier when you delete your online data.
+
+### In-app purchases (only if you buy something)
+- **What:** Google Play handles the payment; we never see your card or bank details. When you buy, the game sends the purchase's token and product to our server, which checks it with Google Play and records: the product, Google's order number, the country or region of the purchase, the dates of the purchase and of our check, whether it was a test purchase, its status (valid, refunded or cancelled), a one-way hash of the purchase token (not the token itself) and your anonymous account id. On your device, the game keeps the products you own and any purchase still being confirmed in its save, and logs an analytics event with the product, price and currency (under the analytics rules below).
+- **Purchase library:** Unity In-App Purchasing (Unity Technologies) runs in the game to talk to Google Play. It also sends technical events about each purchase (the product, Google's purchase receipt, device and app information) to Unity, under Unity's privacy policy: https://unity.com/legal/privacy-policy.
+- **Why and legal basis:** giving you what you bought exactly once, restoring Remove Ads and the starter pack on a new install, handling refunds and preventing fraud (performing our contract with you; our legitimate interest in preventing fraud).
+- **Kept:** 13 months after the purchase or our last check of it, then deleted automatically. Google keeps its own record of your purchases under Google's privacy policy.
 
 ### Analytics (Google Analytics for Firebase)
 - **What:** game events (levels started, won or lost, boosters used, tutorial steps, your consent answer), device and app information (model, OS version, app version, language), an app instance id, your anonymous account id (so that one support code finds all your data when you ask us to delete it), and an approximate location (country or region) that Google derives from your IP address. No advertising id; Google's advertising features are off; no names or free text are sent.
@@ -46,13 +52,13 @@ Blend Loop is a puzzle game with online leaderboards and a weekly race. To run t
 - **Why and legal basis:** protecting our servers and the leaderboards from abuse (our legitimate interest).
 
 ### Stored only on your device
-- Your progress (levels, coins, lives, album, settings) and your consent choice. If Android device backup is on, Google may include them in your backup. Uninstalling the game removes them from the device, but not your online data: delete that first in the game.
+- Your progress (levels, coins, lives, album, settings), the products you own and your consent choice. If Android device backup is on, Google may include them in your backup. Uninstalling the game removes them from the device, but not your online data: delete that first in the game.
 
 ## Who processes your data
-Google is our service provider for all of the above (Firebase, Google Analytics, Google Cloud, Google Play). Our game data (leaderboard profiles, race entries) is stored in Google Cloud's Singapore region; Google may process data in other countries under its own safeguards. We do not sell your data, do not share it with anyone for advertising, and do not show ads in this version.
+Google is our service provider for all of the above (Firebase, Google Analytics, Google Cloud, Google Play). Unity Technologies provides the purchase library and receives its purchase events. Our game data (leaderboard profiles, race entries) is stored in Google Cloud's Singapore region; Google may process data in other countries under its own safeguards. We do not sell your data, do not share it with anyone for advertising, and do not show ads in this version.
 
 ## Deleting your data
-- **In the game:** Settings → Privacy → **Delete my online data**. This deletes your leaderboard profile, your race entries and your anonymous account at once, and resets this install's Firebase and analytics ids. Within 30 days we ask Google to delete your analytics data (Google removes it from reports within 72 hours and deletes it within about two months) and we delete it from BigQuery. Crash reports expire after 90 days. Your progress on the device stays.
+- **In the game:** Settings → Privacy → **Delete my online data**. This deletes your leaderboard profile, your race entries and your anonymous account at once, and resets this install's Firebase and analytics ids. Within 30 days we ask Google to delete your analytics data (Google removes it from reports within 72 hours and deletes it within about two months) and we delete it from BigQuery. Crash reports expire after 90 days. Purchase records stay until they expire (13 months) but without your account id, order number or country, so a purchase cannot be used twice and refunds still match; Remove Ads and the starter pack can still be restored with the same Google account. Your progress on the device stays.
 - **By email:** if you cannot use the game, email amory.dev@gmail.com from any address with the **support code** shown in Settings → Privacy (tap it to copy the full code). We delete the same data within 30 days, as above. We cannot find your data by your nickname alone, because nicknames are not unique.
 - More: https://amorydev.github.io/blendloop-legal/delete-data
 
