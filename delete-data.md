@@ -18,7 +18,9 @@ Email **amory.dev@gmail.com** with the subject "Delete my data" and your **suppo
 
 We cannot find your data from your nickname alone, because nicknames are not unique. Without the support code we can only delete what we can tie to your request.
 
-## What is kept
-Nothing that identifies you. Aggregated statistics (for example, how many players finished a level) do not contain your data.
+## What is kept, why and for how long
+- **Purchase records:** if you bought something, our record of each purchase (product, dates, test or not, status, a one-way hash of the purchase token) stays until it expires, 13 months after the purchase or our last check of it. Deleting your data removes your account id, Google's order number and the country from it, so it no longer identifies you; we keep the rest so a purchase cannot be used twice and refunds still match. Remove Ads and the starter pack can still be restored with the same Google account.
+- **Ads:** what Google AdMob received (see the privacy policy) is held by Google under its own policy; we never receive your advertising ID. To stop it being linked to you, reset or delete your advertising ID in your device's settings.
+- **Aggregated statistics** (for example, how many players finished a level) do not contain your data.
 
 See the full privacy policy: https://amorydev.github.io/blendloop-legal/privacy-policy
